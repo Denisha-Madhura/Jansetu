@@ -3,15 +3,13 @@ name = "jansetu-backend"
 version = "0.0.1"
 description = "A crowd-sourced platform for reporting civic issues."
 authors = [
-    {name = "Aditya Jyoti",email = "aj.adityajyoti@gmail.com"}
+    {name = "Aditya Jyoti", email = "aj.adityajyoti@gmail.com"}
 ]
 readme = "README.md"
-requires-python = ">=3.13"
-dependencies = [
-]
+requires-python = ">=3.12"
 
 [tool.poetry]
-packages = [{include = "backend", from = "src"}]
+packages = [{include = "src"}]
 
 [tool.black]
 line-length = 88
@@ -21,13 +19,21 @@ include = "src"
 [tool.ruff]
 line-length = 88
 target-version = "py310"
-extend-select = ["I", "E", "F"] # I: import, E: pycodestyle, F: pyflakes
+extend-select = ["I", "E", "F"]
 exclude = [".venv", "__pypackages__"]
 src = ["src"]
 
-[tool.poetry.scripts]
-lint = "ruff check src"
-format = "black src"
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.116.1"
+uvicorn = "^0.35.0"
+pydantic = "^2.11.9"
+sqlmodel = "^0.0.24"
+dotenv = "^0.9.9"
+asyncpg = "^0.30.0"
+passlib = "^1.7.4"
+bcrypt = "^4.3.0"
+pyjwt = "^2.10.1"
 
 [tool.poetry.group.dev.dependencies]
 black = "^25.1.0"
