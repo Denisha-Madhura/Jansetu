@@ -1,0 +1,19 @@
+[project]
+name = "jansetu-backend"
+version = "0.0.1"
+description = "A crowd-sourced platform for reporting civic issues."
+authors = [
+    {name = "Aditya Jyoti",email = "aj.adityajyoti@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+]
+
+[tool.poetry]
+packages = [{include = "backend", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
