@@ -1,0 +1,4 @@
+cd frontend
+pnpm prettier --write "src/**/*.{ts,tsx,js,jsx,json,css,scss,md}"
+pnpm eslint --fix "src/**/*.{ts,tsx,js,jsx}"
+pnpm build
