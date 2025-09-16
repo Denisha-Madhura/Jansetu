@@ -144,6 +144,8 @@ poetry run uvicorn src.main:app --reload
 
 ### How to use swagger
 
+![swagger view](.github/assets/Screenshot_2025-09-16-11-03-46-32_40deb401b9ffe8e1df2f1cc5ba480b12.jpg)
+
 FastAPI automatically generates an **interactive API documentation** using Swagger. You can use it to *explore endpoints, test requests, and see responses* without needing external tools like Postman.
 
 1. Open **Swagger UI**
